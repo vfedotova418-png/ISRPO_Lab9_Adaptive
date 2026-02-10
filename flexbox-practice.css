@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Header - Mobile First */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    text-align: center;
+}
+.nav a:hover {
+    background-color: #777;
+}
+.about {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+.about h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 20px;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card h3,
+.card p {
+    padding: 15px;
+}
+.card h3 {
+    color: #333;
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Tablet (768px и больше) */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .nav a {
+        background-color: transparent;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .card {
+        flex: 1;
+        min-width: 250px;
+        max-width: 350px;
+    }
+}
